@@ -3,29 +3,29 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
-    signingConfigs {
-        release {
-            storeFile file("shopboss.jks")
-            storePassword "dianboss"
-            keyAlias "key0"
-            keyPassword "dianboss"
-        }
-        debug {
-            storeFile file("shopboss.jks")
-            storePassword "dianboss"
-            keyAlias "key0"
-            keyPassword "dianboss"
-        }
-
-
-    }
+//    signingConfigs {
+//        release {
+//            storeFile file("shopboss.jks")
+//            storePassword "dianboss"
+//            keyAlias "key0"
+//            keyPassword "dianboss"
+//        }
+//        debug {
+//            storeFile file("shopboss.jks")
+//            storePassword "dianboss"
+//            keyAlias "key0"
+//            keyPassword "dianboss"
+//        }
+//
+//
+//    }
     defaultConfig {
         applicationId "com.QiSheng.ShopBoss"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
@@ -36,14 +36,14 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-        debug{
-            debuggable true
-            minifyEnabled false  //不启用Proguard
-            signingConfig signingConfigs.debug
-        }
+//        debug{
+//            debuggable true
+//            minifyEnabled false  //不启用Proguard
+//            signingConfig signingConfigs.debug
+//        }
     }
 
     compileOptions {
