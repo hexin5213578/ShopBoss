@@ -1,4 +1,4 @@
-package com.QiSheng.ShopBoss;
+package com.QiSheng.ShopBoss.welcome;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import androidx.core.app.ActivityCompat;
 
+import com.QiSheng.ShopBoss.R;
 import com.QiSheng.ShopBoss.base.BaseAvtivity;
 import com.QiSheng.ShopBoss.base.BasePresenter;
 

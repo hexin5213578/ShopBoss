@@ -61,6 +61,7 @@ public class App extends Application {
         // CrashReport.initCrashReport(context, strategy);
     }
 
+
     private void initWX() {
         mWXApi = WXAPIFactory.createWXAPI(context, null);
         mWXApi.registerApp("wxacf956e14f407890");
